@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="ttk.Labelframe" id="Jabrony by Boxy Monkey">
+    <property name="height">0</property>
+    <property name="padding">0</property>
+    <property name="text" translatable="yes">Jabrony by Boxy Monkey
+</property>
+    <property name="width">200</property>
+    <layout>
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+    </layout>
+    <child>
+      <object class="ttk.Frame" id="jabrony">
+        <property name="height">0</property>
+        <property name="padding">0</property>
+        <property name="width">0</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+        <child>
+          <object class="ttk.Checkbutton" id="glow">
+            <property name="command">on_glow_clicked</property>
+            <property name="offvalue">0</property>
+            <property name="onvalue">1</property>
+            <property name="text" translatable="yes">Glow</property>
+            <property name="variable">int:checked</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="pady">30</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="pygubu.builder.widgets.scrolledframe" id="scrolledframe_2">
+        <property name="scrolltype">both</property>
+        <property name="usemousewheel">false</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
