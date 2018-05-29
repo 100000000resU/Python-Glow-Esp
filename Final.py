@@ -9,8 +9,8 @@ import pygubu
 from tkinter import Tk, Button, Frame, Entry, END
 
 
-
 pm = pymem.Pymem("csgo.exe")
+
 
 # Offsets 01/17/18
 dwLocalPlayer = (0xAA9AB4)
@@ -66,7 +66,7 @@ class Application:
         builder.add_from_file('menu.ui')
 
         #3: Create the widget using a master as parent
-        self.mainwindow = builder.get_object('Jabrony by Boxy Monkey', master)
+        self.mainwindow = builder.get_object('GlowEsp by Gubbna', master)
 
         builder.connect_callbacks(self)
 
@@ -143,6 +143,6 @@ def get_glow_pointer():
 if __name__ == '__main__':
     Thread(target = walls).start()
     root = tk.Tk()
-    root.title("Jabrony")
+    root.title("GlowEsp")
     app = Application(root)
     root.mainloop()
